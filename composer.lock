@@ -4,8 +4,47 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83110854ef4adf35ab37571f3940f0ff",
+    "content-hash": "bc8637edfedabc1dcba9d55d982ce439",
     "packages": [
+        {
+            "name": "grifart/nette-scoped-di",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/grifart/nette-scoped-di.git",
+                "reference": "e403d78562ac226ad90212fc5ffa12f3ca247ebb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/grifart/nette-scoped-di/zipball/e403d78562ac226ad90212fc5ffa12f3ca247ebb",
+                "reference": "e403d78562ac226ad90212fc5ffa12f3ca247ebb",
+                "shasum": ""
+            },
+            "require": {
+                "nette/bootstrap": "~3.0",
+                "nette/di": "~3.0",
+                "php": "~7.1 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan-shim": "~0.11.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mangoweb\\NetteDIScope\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Multiple DI containers support for Nette DI",
+            "support": {
+                "issues": "https://github.com/grifart/nette-scoped-di/issues",
+                "source": "https://github.com/grifart/nette-scoped-di/tree/v0.1.0"
+            },
+            "time": "2021-01-04T16:26:46+00:00"
+        },
         {
             "name": "latte/latte",
             "version": "v3.0.4",
