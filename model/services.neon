@@ -1,0 +1,9 @@
+services:
+	filesystem:
+		type: League\Flysystem\Filesystem
+		factory: @outerContainer::getByType(App\Model\FilesystemProvider)::getFilesystem()
+		autowired: false
+
+	-
+		factory: App\Model\FileFacade(filesystem: @filesystem)
+		tags: [API]

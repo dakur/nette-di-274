@@ -1,0 +1,5 @@
+services:
+	flysystem.filesystem:
+		factory: League\Flysystem\Filesystem(League\Flysystem\Local\LocalFilesystemAdapter(%dataDir%))
+		autowired: false
+	- App\Infrastructure\FilesystemProvider(@flysystem.filesystem)

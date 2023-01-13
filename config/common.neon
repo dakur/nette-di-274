@@ -1,5 +1,5 @@
 parameters:
-
+	dataDir: %appDir%/../data
 
 application:
 	errorPresenter: Error
@@ -15,6 +15,9 @@ di:
 	export:
 		parameters: no
 		tags: no
+
+includes:
+	- ../app/Infrastructure/services.neon
 
 
 extensions:
